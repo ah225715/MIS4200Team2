@@ -18,6 +18,8 @@ namespace MIS4200Team2.DAL
         // add the set initializer statement here
          // Database.SetInitializer(new MigrateDatabaseToLatestVersion<Team2Context, MIS4200Team2.Migrations..Configuration>("DefaultConnection"));
         }
+
+        public System.Data.Entity.DbSet<MIS4200Team2.Models.userProfile> userProfiles { get; set; }
     }
 
     // Include each object here. The value inside <> is the name of the class,
