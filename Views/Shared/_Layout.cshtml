@@ -47,7 +47,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Values", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    @if (User.Identity.IsAuthenticated)
+                    @@if (User.Identity.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Employees", "Index", "userProfiles")</li>
                         <li>@Html.ActionLink("Recognitions", "Index", "recognitions")</li>

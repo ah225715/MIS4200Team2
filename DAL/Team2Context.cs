@@ -20,6 +20,8 @@ namespace MIS4200Team2.DAL
         }
 
         public System.Data.Entity.DbSet<MIS4200Team2.Models.userProfile> userProfiles { get; set; }
+
+        public System.Data.Entity.DbSet<MIS4200Team2.Models.recognitions> recognitions { get; set; }
     }
 
     // Include each object here. The value inside <> is the name of the class,

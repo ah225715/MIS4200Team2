@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\recognitionsController.cs" />
     <Compile Include="Controllers\userProfilesController.cs" />
     <Compile Include="DAL\Team2Context.cs" />
     <Compile Include="Global.asax.cs">
@@ -246,6 +247,11 @@
     <Content Include="Views\userProfiles\Details.cshtml" />
     <Content Include="Views\userProfiles\Edit.cshtml" />
     <Content Include="Views\userProfiles\Index.cshtml" />
+    <Content Include="Views\recognitions\Create.cshtml" />
+    <Content Include="Views\recognitions\Delete.cshtml" />
+    <Content Include="Views\recognitions\Details.cshtml" />
+    <Content Include="Views\recognitions\Edit.cshtml" />
+    <Content Include="Views\recognitions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
