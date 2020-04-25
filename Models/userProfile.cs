@@ -74,7 +74,7 @@ namespace MIS4200Team2.Models
             VP
         }
 
-        /* ICollection<recognition> Recognition { get; set; }
+       ICollection<recognitions> Recognition { get; set; }
 
         public string fullName
         {
@@ -82,7 +82,7 @@ namespace MIS4200Team2.Models
             {
                 return lastName + ", " + firstName;
             }
-        } */
+        } 
 
     }
 

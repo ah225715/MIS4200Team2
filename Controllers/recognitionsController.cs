@@ -40,7 +40,7 @@ namespace MIS4200Team2.Controllers
         // GET: recognitions/Create
         public ActionResult Create()
         {
-            ViewBag.ID = new SelectList(db.userProfiles, "ID", "firstName");
+            ViewBag.ID = new SelectList(db.userProfiles, "ID", "fullName");
             return View();
         }
 
@@ -49,7 +49,7 @@ namespace MIS4200Team2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "recognitionId,ID,DateOfRecognition,description,values")] recognitions recognitions)
+        public ActionResult Create([Bind(Include = "recognitionId,ID,description,values")] recognitions recognitions)
         {
             if (ModelState.IsValid)
             {
@@ -74,7 +74,7 @@ namespace MIS4200Team2.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.ID = new SelectList(db.userProfiles, "ID", "firstName", recognitions.ID);
+            ViewBag.ID = new SelectList(db.userProfiles, "ID", "fullName", recognitions.ID);
             return View(recognitions);
         }
 
@@ -83,7 +83,7 @@ namespace MIS4200Team2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "recognitionId,ID,DateOfRecognition,description,values")] recognitions recognitions)
+        public ActionResult Edit([Bind(Include = "recognitionId,ID,description,values")] recognitions recognitions)
         {
             if (ModelState.IsValid)
             {
